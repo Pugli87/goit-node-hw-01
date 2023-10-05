@@ -1,7 +1,8 @@
-//const fs = require("fs").promises;
+const fs = require("fs");
+const path = require("path");
 
-//const contactsPath = __filename;
-//console.log(contactsPath);
+const contactsPath = path.join(__dirname, "db", "contacts.json");
+console.log(contactsPath);
 
 /*
 fs.readFile("contact.js");
@@ -33,4 +34,9 @@ function addContact(name, email, phone) {
 	// ...tu código
 }
 
-module.exports = { listContacts, getContactById, removeContact, addContact };
+module.exports = {
+	listContacts,
+	getContactById,
+	removeContact,
+	addContact,
+};
