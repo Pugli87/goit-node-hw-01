@@ -7,10 +7,10 @@ const {
 	addContact,
 } = require("./contacts");
 
-listContacts();
-getContactById("AeHIrLTr6JkxGE6SN-0Rw");
-removeContact("AeHIrLTr6JkxGE6SN-0Rw");
-addContact("Carlos Pugliese", "pugliese8725@gmail.com", "3135436728");
+// listContacts();
+// getContactById("AeHIrLTr6JkxGE6SN-0Rw");
+// removeContact("AeHIrLTr6JkxGE6SN-0Rw");
+// addContact("Carlos Pugliese", "pugliese8725@gmail.com", "3135436728");
 
 program
 	.option("-a, --action <type>", "choose action")
