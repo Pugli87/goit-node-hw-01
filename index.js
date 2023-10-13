@@ -1,16 +1,12 @@
 const { Command } = require("commander");
 const program = new Command();
+
 const {
 	listContacts,
 	getContactById,
 	removeContact,
 	addContact,
-} = require("./contacts");
-
-// listContacts();
-// getContactById("AeHIrLTr6JkxGE6SN-0Rw");
-// removeContact("AeHIrLTr6JkxGE6SN-0Rw");
-// addContact("Carlos Pugliese", "pugliese8725@gmail.com", "3135436728");
+} = require("./setting/contacts");
 
 program
 	.option("-a, --action <type>", "choose action")
