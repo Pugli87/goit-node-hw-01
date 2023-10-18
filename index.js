@@ -6,7 +6,7 @@ const {
 	getContactById,
 	removeContact,
 	addContact,
-} = require("./setting/contacts");
+} = require("./contacts");
 
 program
 	.option("-a, --action <type>", "choose action")
