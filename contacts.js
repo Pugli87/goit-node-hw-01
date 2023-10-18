@@ -2,9 +2,8 @@ const fs = require("fs").promises;
 const path = require("path");
 
 //const contactsPath = path.join(__dirname, "db", "contacts.json");
-const contactsPath = path.join(__dirname, "./db/contacts.json");
-// guardamos la ruta del archivo contacts.json
-console.log(contactsPath);
+const contactsPath = path.join(__dirname, "./db/contacts.json"); // guardamos la ruta del archivo contacts.json
+
 // Función para cargar la lista de contactos desde el archivo JSON.
 async function loadContacts() {
 	try {
@@ -58,6 +57,7 @@ async function removeContact(contactId) {
 	const contacts = await loadContacts();
 	const index = contacts.findIndex((c) => c.id === contactId);
 	if (index !== -1) {
+		//método devuelve -1 si no se encuentra ninguna coincidencia.
 		const removedContact = contacts.splice(index, 1)[0];
 		await saveContacts(contacts);
 		console.log("Contact removed:");
