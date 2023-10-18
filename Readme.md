@@ -13,3 +13,7 @@
 "email": "dui.in@egetlacus.ca",
 "phone": "(294) 840-6685"
 },
+
+# link a la capturas
+
+https://drive.google.com/drive/folders/1oOAZ93G00m4Gx1kZZeaEbQL5yUTqwEFD?usp=share_link
