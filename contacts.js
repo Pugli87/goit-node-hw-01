@@ -70,6 +70,6 @@ async function removeContact(contactId) {
 module.exports = {
 	listContacts,
 	getContactById,
-	removeContact,
 	addContact,
+	removeContact,
 };
